@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+<h1>Sistemas de Multas</h1>
+
+Vlocidadde do carro  :
+<input type="number" name="txttv" id="txttv">
+<input type="button" value="calcular" onclick="calcular()">
+
+<div id="res">
+
+</div>
+
+<script>
+
+    function calcular(){
+        var txt = window.document.querySelector(`input#txttv`)
+        var res = window.document.querySelector(`div#res`)
+        var vel = Number (txt.value)
+        res.innerHTML = `<p>A Sua velocidade é ${vel} km/h </p>`
+
+        if (vel>59){
+            res.innerHTML += `<p>voce ultrapassou o limite de velocidade, <strong>MULTADO!!!</strong></p>`
+        }
+    }
+</script>
+
+
+
+
+ 
+
+
+</body>
+</html>
