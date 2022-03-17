@@ -13,11 +13,13 @@ background-color: white;
 border-radius: 10px;
 box-shadow:5px  5px 10px rgba(0, 0, 0, 0.438);
 padding: 15px;
-width: 500px;
+width: 580px;
 margin: auto;
 text-align: center;
 }
-
+#numero{
+    width: 200px;
+}
 footer{
 color: white;
 font-style: italic;
